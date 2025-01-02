@@ -83,7 +83,7 @@ class SplashActivity : AppCompatActivity() {
             if (loginCheck.equals("Login")) {
                 startActivity(Intent(this@SplashActivity, DashBoardActivity::class.java))
             }else{
-                startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
+                startActivity(Intent(this@SplashActivity, DashBoardActivity::class.java))
             }
         }, 3000)
     }

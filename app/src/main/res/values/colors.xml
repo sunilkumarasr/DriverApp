@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1F2D67</color>
-    <color name="darkcolorPrimary">#1F2D67</color>
+    <color name="colorPrimary">#38a67a</color>
+    <color name="darkcolorPrimary">#38a67a</color>
     <color name="black">#000000</color>
     <color name="txtHeader">#707070</color>
     <color name="text">#333333</color>
@@ -22,4 +22,5 @@
     <color name="blue">#1F2D67</color>
     <color name="trance">#00000000</color>
     <color name="red">#C32445</color>
+    <color name="bottom_selector">#d6e2de</color>
 </resources>

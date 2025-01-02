@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.DriverApp" parent="Base.Theme.DriverApp" />
+
+    <style name="BottomNavTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">16sp</item> <!-- Adjust the text size here -->
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
 </resources>
