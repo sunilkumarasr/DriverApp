@@ -18,6 +18,9 @@
         android:theme="@style/Theme.DriverApp"
         tools:targetApi="31">
         <activity
+            android:name=".Logins.PersonalInformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Logins.OTPActivity"
             android:exported="false" />
         <activity

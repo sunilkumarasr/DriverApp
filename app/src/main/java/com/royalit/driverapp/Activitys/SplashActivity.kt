@@ -81,9 +81,9 @@ class SplashActivity : AppCompatActivity() {
         handler.postDelayed({
             val loginCheck = Preferences.loadStringValue(applicationContext, Preferences.LOGINCHECK, "")
             if (loginCheck.equals("Login")) {
-                startActivity(Intent(this@SplashActivity, DashBoardActivity::class.java))
+                startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             }else{
-                startActivity(Intent(this@SplashActivity, DashBoardActivity::class.java))
+                startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             }
         }, 3000)
     }
@@ -106,7 +106,6 @@ class SplashActivity : AppCompatActivity() {
         }
 
     private fun askNotificationPermission() {
-        // This is only necessary for API level >= 33 (TIRAMISU)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(
                     this,
@@ -118,23 +117,17 @@ class SplashActivity : AppCompatActivity() {
 
                 }, 1500)
             } else if (shouldShowRequestPermissionRationale(android.Manifest.permission.POST_NOTIFICATIONS)) {
-                // Display an educational UI explaining to the user the features that will be enabled
-                //       by them granting the POST_NOTIFICATION permission. This UI should provide the user
-                //       "OK" and "No thanks" buttons. If the user selects "OK," directly request the permission.
-                //       If the user selects "No thanks," allow the user to continue without notifications.
-                ActivityCompat.requestPermissions(
+                 ActivityCompat.requestPermissions(
                     this@SplashActivity,
                     arrayOf(android.Manifest.permission.POST_NOTIFICATIONS),
                     200
                 );
             } else {
-                // Directly ask for the permission
                 ActivityCompat.requestPermissions(
                     this@SplashActivity,
                     arrayOf(android.Manifest.permission.POST_NOTIFICATIONS),
                     200
                 );
-                //requestPermissionLauncher.launch(android.Manifest.permission.POST_NOTIFICATIONS)
             }
         }
     }

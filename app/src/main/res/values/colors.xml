@@ -16,11 +16,13 @@
     <color name="lightGreen">#E8FFEA</color>
     <color name="green">#11D171</color>
     <color name="pending">#DBBD28</color>
-    <color name="box_border">#1F2D67</color>
+    <color name="box_border">#d0d5dd</color>
     <color name="box_gray">#F3F3F3</color>
-    <color name="hintcolor">#999999</color>
+    <color name="hintcolor">#e3e3e3</color>
     <color name="blue">#1F2D67</color>
     <color name="trance">#00000000</color>
     <color name="red">#C32445</color>
     <color name="bottom_selector">#d6e2de</color>
+    <color name="loginBg">#1d272f</color>
+    <color name="buttonBg">#d89f5d</color>
 </resources>
