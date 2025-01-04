@@ -19,6 +19,7 @@
     <color name="box_border">#d0d5dd</color>
     <color name="box_gray">#F3F3F3</color>
     <color name="hintcolor">#e3e3e3</color>
+    <color name="blue_back">#343f54</color>
     <color name="blue">#1F2D67</color>
     <color name="trance">#00000000</color>
     <color name="red">#C32445</color>

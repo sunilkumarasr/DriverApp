@@ -29,6 +29,10 @@ class PersonalInformationActivity : AppCompatActivity() {
 
     private fun inits() {
 
+        binding.linearVerify.setOnClickListener {
+            startActivity(Intent(this@PersonalInformationActivity, AddYourAddressActivity::class.java))
+            overridePendingTransition(0, 0)
+        }
 
     }
 

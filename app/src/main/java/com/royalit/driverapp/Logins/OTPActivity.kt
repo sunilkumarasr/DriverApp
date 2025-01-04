@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
+import com.royalit.driverapp.Activitys.DashBoardActivity
 import com.royalit.driverapp.Config.ViewController
 import com.royalit.driverapp.R
 import com.royalit.driverapp.databinding.ActivityLoginBinding
@@ -30,10 +31,14 @@ class OTPActivity : AppCompatActivity() {
         imm.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT)
     }
 
+    var type: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         ViewController.changeStatusBarColor(this, ContextCompat.getColor(this, R.color.loginBg), false)
+
+        type = intent.getStringExtra("type").toString()
 
         inits()
 
@@ -114,8 +119,14 @@ class OTPActivity : AppCompatActivity() {
 
             var otp: String = "$pin1$pin2$pin3$pin4"
 
-            startActivity(Intent(this@OTPActivity, PersonalInformationActivity::class.java))
-            overridePendingTransition(0, 0)
+            if (type.equals("Login")){
+                startActivity(Intent(this@OTPActivity, DashBoardActivity::class.java))
+            }else{
+                startActivity(Intent(this@OTPActivity, PersonalInformationActivity::class.java))
+                overridePendingTransition(0, 0)
+            }
+
+
         }
 
     }

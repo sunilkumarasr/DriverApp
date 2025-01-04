@@ -27,6 +27,11 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun inits() {
+        binding.linearLogin.setOnClickListener {
+            val intent = Intent(this@LoginActivity, OTPActivity::class.java)
+            intent.putExtra("type", "Login")
+            startActivity(intent)
+        }
 
         binding.linearRegister.setOnClickListener {
             startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))

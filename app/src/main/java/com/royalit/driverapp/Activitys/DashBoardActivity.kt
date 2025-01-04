@@ -2,6 +2,7 @@ package com.royalit.driverapp.Activitys
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -31,7 +32,7 @@ class DashBoardActivity : AppCompatActivity() {
         setContentView(binding.root)
         ViewController.changeStatusBarColor(
             this,
-            ContextCompat.getColor(this, R.color.colorPrimary),
+            ContextCompat.getColor(this, R.color.loginBg),
             false
         )
 
@@ -53,18 +54,25 @@ class DashBoardActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id. navigationHome-> {
+                    binding.txtTitle.visibility = View.GONE
                     loadFragment(HomeFragment())
                     true
                 }
                 R.id. navigationDeliveries-> {
+                    binding.txtTitle.visibility = View.VISIBLE
+                    binding.txtTitle.setText("All Deliveries")
                     loadFragment(DeliveriesFragment())
                     true
                 }
                 R.id. navigationSupport-> {
+                    binding.txtTitle.visibility = View.VISIBLE
+                    binding.txtTitle.setText("Support")
                     loadFragment(SupportFragment())
                     true
                 }
                 R.id.navigationProfile -> {
+                    binding.txtTitle.visibility = View.VISIBLE
+                    binding.txtTitle.setText("Profile")
                     loadFragment(ProfileFragment())
                     true
                 }
