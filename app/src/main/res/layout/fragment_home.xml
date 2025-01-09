@@ -1,14 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".Fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/white"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/loginBg"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/logo_ic"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/notification_ic"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hi, "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/teachers_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunil!"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/teachers_medium"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ready to hit the road?"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/teachers_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let's deliver!"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/teachers_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearEmp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_colorprimary_lightedge"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="215dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Employee ID: "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/teachers_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRC000015"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/teachers_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearEmp"
+            android:layout_marginTop="15sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/round_lightgray">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/orders_found_ic"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="2Delivery orders found!"
+                        android:fontFamily="@font/teachers_medium"
+                        android:textColor="@color/black"/>
+                    <LinearLayout
+                        android:id="@+id/linearViewAllDeliveries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="View details"
+                            android:fontFamily="@font/teachers_regular"
+                            android:textColor="@color/colorPrimary"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="16sp"
+                            android:layout_height="16sp"
+                            android:layout_marginStart="10dp"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/right_arrow"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10dp"
+                android:text="Active Delivery"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/teachers_medium"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_lightgray">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/profile_ic"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textSize="18sp"
+                            android:text="Sai Kumar"
+                            android:singleLine="true"
+                            android:fontFamily="@font/teachers_medium"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20sp"
+                        android:background="@color/gray"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="0.8">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textSize="18sp"
+                            android:text="Order ID: "
+                            android:singleLine="true"
+                            android:fontFamily="@font/teachers_regular"
+                            android:textColor="@color/txtHeader"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="#112054"
+                            android:singleLine="true"
+                            android:fontFamily="@font/teachers_medium"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="start"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/marker_ic"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="18sp"
+                        android:text="@string/note_short"
+                        android:maxLines="3"
+                        android:fontFamily="@font/teachers_regular"
+                        android:textColor="@color/txtHeader"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearViewActiveDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="View details"
+                        android:fontFamily="@font/teachers_regular"
+                        android:textColor="@color/colorPrimary"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="16sp"
+                        android:layout_height="16sp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/right_arrow"
+                        android:tint="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

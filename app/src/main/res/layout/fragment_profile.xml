@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"
@@ -32,7 +33,7 @@
                         android:layout_height="25dp"
                         android:layout_marginStart="15dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/ic_launcher_background"/>
+                        android:src="@drawable/profile_ic"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -44,8 +45,8 @@
                         android:textSize="18sp"
                         android:fontFamily="@font/teachers_regular" />
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_marginEnd="15dp"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"
@@ -65,7 +66,7 @@
                         android:layout_height="25dp"
                         android:layout_marginStart="15dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/ic_launcher_background"/>
+                        android:src="@drawable/kyc_ic"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -77,8 +78,8 @@
                         android:textSize="18sp"
                         android:fontFamily="@font/teachers_regular" />
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_marginEnd="15dp"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"
@@ -98,7 +99,7 @@
                         android:layout_height="25dp"
                         android:layout_marginStart="15dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/ic_launcher_background"/>
+                        android:src="@drawable/about_us_ic"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -110,8 +111,8 @@
                         android:textSize="18sp"
                         android:fontFamily="@font/teachers_regular" />
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_marginEnd="15dp"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"
@@ -132,7 +133,7 @@
                         android:layout_height="25dp"
                         android:layout_marginStart="15dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/ic_launcher_background"/>
+                        android:src="@drawable/privacy_policy"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -144,8 +145,8 @@
                         android:textSize="18sp"
                         android:fontFamily="@font/teachers_regular" />
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_marginEnd="15dp"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"
@@ -166,7 +167,7 @@
                         android:layout_height="25dp"
                         android:layout_marginStart="15dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/ic_launcher_background"/>
+                        android:src="@drawable/doc_ic"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -178,8 +179,8 @@
                         android:textSize="18sp"
                         android:fontFamily="@font/teachers_regular" />
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_marginEnd="15dp"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"
@@ -200,7 +201,7 @@
                         android:layout_height="25dp"
                         android:layout_marginStart="15dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/ic_launcher_background"/>
+                        android:src="@drawable/logout_ic"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

@@ -22,41 +22,48 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp"
+                android:orientation="horizontal"
                 android:background="@drawable/round_colorprimary">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Welcome to"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:fontFamily="@font/teachers_semibold" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="The Rice Company"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:fontFamily="@font/teachers_semibold" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Just a few steps to complate and then you can start earning with Us"
-                    android:textColor="@color/white"
-                    android:textSize="17sp"
-                    android:fontFamily="@font/teachers_medium" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="15dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Welcome to The Rice Company"
+                       android:textColor="@color/white"
+                       android:textSize="20sp"
+                       android:fontFamily="@font/teachers_semibold" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="Just a few steps to complate and then you can start earning with Us"
+                       android:textColor="@color/white"
+                       android:textSize="15sp"
+                       android:fontFamily="@font/teachers_medium" />
+               </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/approve_character"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
+                android:fontFamily="@font/teachers_medium"
                 android:text="Complate the"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                android:fontFamily="@font/teachers_semibold" />
+                android:textSize="20sp" />
 
             <RelativeLayout
                 android:id="@+id/relativeVehicle"
@@ -70,7 +77,7 @@
                     android:layout_height="25dp"
                     android:layout_marginStart="15dp"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:src="@drawable/cycle_ic"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -80,14 +87,15 @@
                     android:text="Vehicle Details"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:fontFamily="@font/teachers_medium" />
+                    android:fontFamily="@font/teachers_regular" />
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginEnd="15dp"
                     android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/right_arrow"/>
+                    android:src="@drawable/right_arrow"
+                    android:tint="@color/colorPrimary"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -102,7 +110,7 @@
                     android:layout_height="25dp"
                     android:layout_marginStart="15dp"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:src="@drawable/doc_ic"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -112,14 +120,14 @@
                     android:text="Documents"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:fontFamily="@font/teachers_medium" />
+                    android:fontFamily="@font/teachers_regular" />
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_marginEnd="15dp"
                     android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:src="@drawable/key_ic"/>
             </RelativeLayout>
 
         </LinearLayout>
@@ -142,7 +150,7 @@
                 android:text="Submit"
                 android:textColor="@color/white"
                 android:textSize="17sp"
-                android:fontFamily="@font/teachers_semibold" />
+                android:fontFamily="@font/teachers_medium" />
         </LinearLayout>
     </RelativeLayout>
 
