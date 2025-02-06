@@ -46,8 +46,6 @@ class DashBoardActivity : AppCompatActivity() {
 
     private fun inits() {
 
-
-
         //BottomNavigationView
         loadFragment(HomeFragment())
         bottomNavigationView = binding.navigationView
